@@ -55,3 +55,13 @@ See [these instructions](supercloud.md).
 * The second one is the static typing check, which uses Mypy to verify type annotations. If it doesn't work due to import errors, try `mypy -p predicators --config-file predicators/mypy.ini` from one directory up.
 * The third one is the linter check, which runs Pylint with the custom config file `.predicators_pylintrc` in the root of this repository. Feel free to edit this file as necessary.
 * The fourth one is the autoformatting check, which uses the custom config files `.style.yapf` and `.isort.cfg` in the root of this repository.
+
+# Citation from Tom
+I would recommend running the following command to start, after installing the repository:
+
+```bash
+python predicators/main.py --env cover --approach grammar_search_invention \
+        --seed 0 --excluded_predicates all
+```
+
+You should see printouts that are pretty informative as the hill-climbing search runs.

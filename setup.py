@@ -46,4 +46,5 @@ setup(
             "pytest-cov==2.12.1", "pytest-pylint==0.18.0", "yapf==0.32.0",
             "docformatter==1.4", "isort==5.10.1", "mypy-extensions==1.0.0"
         ]
-    })
+    },
+)
