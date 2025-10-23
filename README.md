@@ -60,6 +60,7 @@ See [these instructions](supercloud.md).
 I would recommend running the following command to start, after installing the repository:
 
 ```bash
+export PYTHONHASHSEED=0 && \
 python predicators/main.py --env cover --approach grammar_search_invention \
         --seed 0 --excluded_predicates all
 ```

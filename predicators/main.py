@@ -32,6 +32,12 @@ To exclude predicates:
 To run grammar search predicate invention (example):
     python predicators/main.py --env cover --approach grammar_search_invention \
         --seed 0 --excluded_predicates all
+
+To run grammar search predicate invention with videos:
+    python predicators/main.py --env cover --approach grammar_search_invention \
+        --seed 0 --excluded_predicates all --make_test_videos \
+        --make_demo_videos --make_demo_images  --video_fps 1 \
+        --render_state_dpi 200
 """
 
 import logging
